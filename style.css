@@ -1,0 +1,534 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #001233;
+    color: #e6e9f0;
+    line-height: 1.6;
+}
+
+/* Estilos para el aside (barra lateral) */
+aside {
+    width: 300px;
+    background: linear-gradient(135deg, #001e4d 0%, #001233 100%);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.docente-titulo {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(90deg, #0046ad 0%, #0057d5 100%);
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.profesor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profesor h3 {
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profesor p {
+    color: #a3c2ff;
+    font-size: 14px;
+}
+
+.integrantes-titulo {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(90deg, #0046ad 0%, #0057d5 100%);
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.proyecto-cuadro {
+    background: linear-gradient(135deg, #002766 0%, #001a4d 100%);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.proyecto-cuadro h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f0a500;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.proyecto-cuadro ul {
+    list-style-type: none;
+}
+
+.proyecto-cuadro li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 2px solid #0057d5;
+    transition: all 0.2s ease;
+}
+
+.proyecto-cuadro li:hover {
+    border-left: 2px solid #f0a500;
+    padding-left: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #001a4d 0%, #00122b 100%);
+    min-height: 100vh;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #f0a500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.subtitulo-principal {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a3c2ff;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para los acordeones */
+.accordion-container {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #002766 0%, #001e4d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-header {
+    background: linear-gradient(90deg, #001e4d 0%, #002766 100%);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-header:hover {
+    background: linear-gradient(90deg, #002766 0%, #0046ad 100%);
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #f0a500;
+}
+
+.accordion-content {
+    padding: 20px;
+    display: none;
+    background: linear-gradient(135deg, #001a4d 0%, #001233 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e6e9f0;
+}
+
+.accordion-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+    color: #a3c2ff;
+}
+
+.accordion-content li::before {
+    content: "•";
+    color: #f0a500;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.accordion-content li strong {
+    color: #fff;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+    color: #a3c2ff;
+}
+
+/* Estilos para el contenido semanal */
+.contenido-semanal {
+    width: 100%;
+    background: linear-gradient(135deg, #001233 0%, #001e4d 100%);
+    color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contenido-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+.contenido-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0a500;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.unidad-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.unidad-row:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    padding-left: 10px;
+}
+
+.expandir-btn {
+    background: linear-gradient(135deg, #0046ad 0%, #0057d5 100%);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.expandir-btn:hover {
+    background: linear-gradient(135deg, #0057d5 0%, #0068ff 100%);
+    transform: scale(1.05);
+}
+
+.numero-unidad {
+    margin-left: 20px;
+    width: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f0a500;
+}
+
+.nombre-unidad {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.semanas-info {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #a3c2ff;
+    font-style: italic;
+}
+
+/* Estilos mejorados para las tablas de contenido */
+.semanas-contenido {
+    background: linear-gradient(135deg, #002766 0%, #001a4d 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px 15px 10px;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.semanas-contenido table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.semanas-contenido th,
+.semanas-contenido td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.semanas-contenido th {
+    background: linear-gradient(90deg, #001233 0%, #001e4d 100%);
+    color: #f0a500;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #0057d5;
+}
+
+.semanas-contenido tr {
+    transition: all 0.3s;
+    background-color: rgba(0, 30, 77, 0.5);
+}
+
+.semanas-contenido tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.semanas-contenido tr:nth-child(even) {
+    background-color: rgba(0, 18, 51, 0.7);
+}
+
+.semanas-contenido td a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.semanas-contenido td a:hover {
+    transform: scale(1.2);
+    color: #f0a500;
+}
+
+.semanas-contenido td a i {
+    font-size: 18px;
+}
+
+/* Estilos para las imágenes */
+/* Imagen del docente en el aside */
+aside img[src="images/docente.jpeg"] {
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid #f0a500;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+aside img[src="images/docente.jpeg"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-color: #0057d5;
+}
+
+/* Contenedor principal de imágenes */
+.header-imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 25px 0;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Todas las imágenes en el header */
+.header-imgs img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+/* Estilos específicos para cada imagen */
+.header-imgs img[src="images/bandera.jpeg"] {
+    flex: 1;
+    min-width: 25%;
+    border-color: #e63946;
+}
+
+.header-imgs img[src="images/uni.jpeg"] {
+    flex: 2;
+    min-width: 35%;
+    border-color: #0057d5;
+}
+
+.header-imgs img[src="images/tecnologia.jpeg"] {
+    flex: 1;
+    min-width: 25%;
+    border-color: #f0a500;
+}
+
+/* Efecto hover para las imágenes */
+.header-imgs img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #a3c2ff;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(90deg, rgba(0, 18, 51, 0.5) 0%, rgba(0, 30, 77, 0.5) 100%);
+    border-radius: 8px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #4d7aff;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f0a500;
+    text-decoration: underline;
+}
+
+/* Estilos para scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #001233;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0046ad, #0057d5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0057d5, #0068ff);
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-imgs {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-imgs img {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .unidad-row {
+        flex-wrap: wrap;
+    }
+    
+    .nombre-unidad {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+        order: 3;
+    }
+    
+    .semanas-contenido table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 22px;
+    }
+    
+    .subtitulo-principal {
+        font-size: 16px;
+    }
+    
+    .accordion-header h3 {
+        font-size: 16px;
+    }
+}

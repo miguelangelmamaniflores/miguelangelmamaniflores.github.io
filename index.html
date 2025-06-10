@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Autónoma del Perú</title>
+    <!-- Enlaces a archivos externos -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="theme-dark">
+    <aside>
+        <span class="docente-titulo">DOCENTE</span>
+        <div class="docente-card">
+            <img src="images/docente.jpeg" alt="Foto del Docente">
+            <div class="profesor">
+                <h3>Hugo Vega Huerta</h3>
+                <p>Profesor del curso</p>
+            </div>
+        </div>
+
+        <div class="grupo">
+            <h4><span class="integrantes-titulo">INTEGRANTES</span></h4>
+            <div class="proyecto-cuadro">
+                <h5>PROYECTO 3</h5>
+                <ul>
+                    <li>CRUZ TAYPE, RICARDO ALONSO</li>
+                    <li>FLORES DIAZ, EDGAR JUNIOR</li>
+                    <li>MAMANI FLORES, MIGUEL ANGEL</li>
+                    <li>QUISCA BARRIONUEVO, GIANKAR PATRICK</li>
+                    <li>RUIZ MARMANILLO, LUIS ANDRES</li>
+                </ul>
+            </div>
+            <div class="proyecto-cuadro">
+                <h5>PROYECTO 4</h5>
+                <ul>
+                    <li>GUEVARA AMARILLO, JEAM PIERRE</li>
+                    <li>HERNANDEZ REYES, JOSE ALEXAANDRE</li>
+                    <li>LAZARO CAYCHO, KAMILA ESTEFANNY</li>
+                    <li>TICONA ELIAS, JEAN PIER</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <div class="header-imgs">
+            <img src="images/bandera.jpeg" alt="Bandera Perú">
+            <img src="images/uni.jpeg" alt="Universidad Autónoma">
+            <img src="images/tecnologia.jpeg" alt="Tecnología y Programación">
+        </div>
+
+        <div class="titulo-principal">UNIVERSIDAD AUTÓNOMA DEL PERÚ</div>
+        <div class="subtitulo-principal">FACULTAD DE INGENIERÍA DE SISTEMAS E INFORMÁTICA</div>
+
+        <!-- ESPECIFICACIONES GENERALES -->
+        <div class="accordion-container">
+            <div class="accordion-header" onclick="toggleAccordion('especificaciones')">
+                <h3><i class="fas fa-info-circle"></i> ESPECIFICACIONES GENERALES</h3>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="accordion-content" id="especificaciones">
+                <ul>
+                    <li><strong>Código:</strong> DD275</li>
+                    <li><strong>Ciclo:</strong> VII</li>
+                    <li><strong>Semestre:</strong> 202501</li>
+                    <li><strong>Créditos:</strong> 4.0</li>
+                    <li><strong>Plan de estudios:</strong> D2</li>
+                    <li><strong>Requisitos:</strong> Programas para el Desarrollo Profesional 3 (PDP-03), Gestión
+                        Estadística de la Información II (DD241)</li>
+                    <li><strong>Tipo:</strong> Obligatorio</li>
+                    <li><strong>Duración:</strong> 16 semanas</li>
+                    <li><strong>Horas semanales:</strong> 5 (3 teoría y 2 práctica)</li>
+                    <li><strong>Modalidad:</strong> Presencial</li>
+                    <li><strong>Área de formación:</strong> Investigación</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SUMILLA -->
+        <div class="accordion-container">
+            <div class="accordion-header" onclick="toggleAccordion('sumilla')">
+                <h3><i class="fas fa-book"></i> SUMILLA</h3>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="accordion-content" id="sumilla">
+                <p>La asignatura Metodología de Investigación Científica es teórico-práctica y obligatoria. Su objetivo
+                    es desarrollar competencias investigativas en los estudiantes, aplicando métodos cuantitativos y
+                    cualitativos para la generación de conocimiento.</p>
+                <p><strong>Temas principales:</strong></p>
+                <ul>
+                    <li>Marco filosófico del conocimiento científico.</li>
+                    <li>Diseños de investigación.</li>
+                    <li>Sistemas de medición y recolección de datos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- COMPETENCIAS GENERALES -->
+        <div class="accordion-container">
+            <div class="accordion-header" onclick="toggleAccordion('competenciasGenerales')">
+                <h3><i class="fas fa-award"></i> COMPETENCIAS GENERALES</h3>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="accordion-content" id="competenciasGenerales">
+                <p><strong>Competencia de la asignatura:</strong> Investiga situaciones problemáticas aplicando
+                    metodología científica para proponer soluciones innovadoras, con ética y responsabilidad social.</p>
+                <p><strong>Resultado final:</strong> El estudiante elabora un informe de investigación cumpliendo
+                    normativas vigentes y demostrando actitud ética.</p>
+                <p><strong>Valores Institucionales vinculados:</strong> Compromiso, Creatividad</p>
+            </div>
+        </div>
+
+        <!-- COMPETENCIAS ESPECÍFICAS -->
+        <div class="accordion-container">
+            <div class="accordion-header" onclick="toggleAccordion('competenciasEspecificas')">
+                <h3><i class="fas fa-tasks"></i> COMPETENCIAS ESPECÍFICAS</h3>
+                <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="accordion-content" id="competenciasEspecificas">
+                <ul>
+                    <li><strong>Unidad 1:</strong> Identificar problemas, formular objetivos y redactar marcos teóricos.
+                    </li>
+                    <li><strong>Unidad 2:</strong> Diseñar metodologías, operacionalizar variables y validar
+                        instrumentos.</li>
+                    <li><strong>Unidad 3:</strong> Analizar datos (descriptivos, paramétricos/no paramétricos) y
+                        discutir resultados.</li>
+                    <li><strong>Unidad 4:</strong> Redactar conclusiones, recomendaciones y presentar el informe final.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CONTENIDO SEMANAL (NUEVO FORMATO) -->
+        <div class="contenido-semanal">
+            <div class="contenido-header">
+                <div class="contenido-titulo"><i class="fas fa-calendar-alt"></i> CONTENIDO SEMANAL</div>
+            </div>
+
+            <!-- Unidad 1 -->
+            <div class="unidad-row">
+                <button class="expandir-btn" onclick="toggleUnidad(1)">
+                    <i class="fas fa-chevron-right" id="icon-1"></i>
+                </button>
+                <div class="numero-unidad">1</div>
+                <div class="nombre-unidad">INTRODUCCIÓN Y MARCO TEÓRICO</div>
+                <div class="semanas-info">(Semanas 1-4)</div>
+            </div>
+
+            <!-- Contenido Unidad 1 -->
+            <div class="semanas-contenido" id="unidad-contenido-1" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Nombre</th>
+                            <th>Tareas - P3</th>
+                            <th>Tareas - P4</th>
+                            <th>Observaciones - P3</th>
+                            <th>Observaciones - P4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Socialización del sílabo, normas de escritura, método científico</td>
+                            <td><a href="https://docs.google.com/document/d/1nq_iVJ1YCg9ldYNqLcG07ne49Y4xTtrir1hONJMsHvU/edit?usp=sharing"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem1.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1nq_iVJ1YCg9ldYNqLcG07ne49Y4xTtrir1hONJMsHvU/edit?usp=sharing"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem1.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Identificación y formulación del problema, justificación, objetivos.</td>
+                            <td><a href="https://docs.google.com/document/d/1TyC4pH-_hrCRix3Ed64hilRXC2_8yTIZXDgx6jSY8ok/edit?usp=sharing"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem2.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1G_z8ZC3qbNzcw43hwU8Vhi9yMTGr1uoC/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem2.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Búsqueda de información, antecedentes, teorías.</td>
+                            <td><a href="https://docs.google.com/document/d/1_MlibSPI3IeXxGSHRTBKEJ9o85j4qhQO/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem3.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1i_I7hosXAqVLK8aXFerMft-4AtC2RXXX/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem3.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Avance 1: Título e introducción.</td>
+                            <td><a href="https://docs.google.com/document/d/1FF2vN8Wk9zBILPAWDA1KLpO44oDM5u2v/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem4.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1h7FeZJNhNsoXENhGCxzCZF_iizpepvm9/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem4.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Unidad 2 -->
+            <div class="unidad-row">
+                <button class="expandir-btn" onclick="toggleUnidad(2)">
+                    <i class="fas fa-chevron-right" id="icon-2"></i>
+                </button>
+                <div class="numero-unidad">2</div>
+                <div class="nombre-unidad">MARCO METODOLÓGICO</div>
+                <div class="semanas-info">(Semanas 5-8)</div>
+            </div>
+
+            <!-- Contenido Unidad 2 -->
+            <div class="semanas-contenido" id="unidad-contenido-2" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Nombre</th>
+                            <th>Tareas - P3</th>
+                            <th>Tareas - P4</th>
+                            <th>Observaciones - P3</th>
+                            <th>Observaciones - P4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>Justificación y objetivos.</td>
+                            <td><a href="https://docs.google.com/document/d/1c5sLm8iEC7Y5cctQkbc4IzwM72id9Kfj/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem5.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1gbTBkgClPNjSWS3qlpgOZsMK-h9ZPPlJ/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem5.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Tipos de investigación, población, muestra, hipótesis.</td>
+                            <td><a href="https://docs.google.com/document/d/1PO000yS1RNbx38__hqrTmR6G_mwKokkv/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem6.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1ILQH7fbmhQ4rrXjxT29MttrvW0xDQY1v/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem6.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Operacionalización de variables, validez y confiabilidad.</td>
+                            <td><a href="https://docs.google.com/document/d/1NvA2ixVpipyZbD4wTxO8sKms2c5rH4VO/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem7.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1Spey45icl_ewMddvJ6EKMT5XE8OzgCUqio3LTjZmlFc/edit?usp=sharing"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem7.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Avance 2: Marco metodológico.</td>
+                            <td><a href="https://docs.google.com/document/d/1NIgQs8JT4o6XBE7OCfEwMZQwvwyu6VZ7/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true"
+                                    target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/tarea_p2_sem8.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/196_5byaIsMrj2K_5AGpSh_kIWBxYBTTy/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem8.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Unidad 3 -->
+            <div class="unidad-row">
+                <button class="expandir-btn" onclick="toggleUnidad(3)">
+                    <i class="fas fa-chevron-right" id="icon-3"></i>
+                </button>
+                <div class="numero-unidad">3</div>
+                <div class="nombre-unidad">RESULTADOS</div>
+                <div class="semanas-info">(Semanas 9-12)</div>
+            </div>
+
+            <!-- Contenido Unidad 3 -->
+            <div class="semanas-contenido" id="unidad-contenido-3" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Nombre</th>
+                            <th>Tareas - P3</th>
+                            <th>Tareas - P4</th>
+                            <th>Observaciones - P3</th>
+                            <th>Observaciones - P4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9</td>
+                            <td>Análisis descriptivo y normalidad de datos.</td>
+                            <td><a href="https://docs.google.com/document/d/1MbhWfHwRufwkGHg0ZhrQgU69ZgFnirN4/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem9.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1pYMDNNR897mmCguuhA8fA2_xJ-ZzJI1i/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                            <td><a href="docs/obs_p2_sem9.docx" target="_blank"><i class="fa fa-file-word"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Pruebas paramétricas/no paramétricas.</td>
+                            <td><a href="https://docs.google.com/document/d/1IybeQzCllOyaYjK-2eaAwpmlEDQ-bcGw/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem10.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="https://docs.google.com/document/d/1amH506K3CaHOGUSds01NTLfF3E10z7mF/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem10.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Tabulación y descripción de resultados.</td>
+                            <td><a href="https://docs.google.com/document/d/1c26_lnJxbtGCHtVdd9Mehewip8KAmaiF/edit?usp=sharing&ouid=101891773667866536207&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem11.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem11.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem11.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Discusión de resultados.</td>
+                            <td><a href="docs/tarea_p1_sem12.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem12.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem12.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem12.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Unidad 4 -->
+            <div class="unidad-row">
+                <button class="expandir-btn" onclick="toggleUnidad(4)">
+                    <i class="fas fa-chevron-right" id="icon-4"></i>
+                </button>
+                <div class="numero-unidad">4</div>
+                <div class="nombre-unidad">INFORME FINAL</div>
+                <div class="semanas-info">(Semanas 13-16)</div>
+            </div>
+
+            <!-- Contenido Unidad 4 -->
+            <div class="semanas-contenido" id="unidad-contenido-4" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Nombre</th>
+                            <th>Tareas - P3</th>
+                            <th>Tareas - P4</th>
+                            <th>Observaciones - P3</th>
+                            <th>Observaciones - P4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13</td>
+                            <td>Discusión de resultados.</td>
+                            <td><a href="docs/tarea_p1_sem13.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem13.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem13.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem13.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Conclusiones y recomendaciones.</td>
+                            <td><a href="docs/tarea_p1_sem14.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem14.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem14.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem14.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Presentación escrita del informe (Turnitin &lt;20%).</td>
+                            <td><a href="docs/tarea_p1_sem15.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem15.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem15.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem15.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Exposición final.</td>
+                            <td><a href="docs/tarea_p1_sem16.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/tarea_p2_sem16.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p1_sem16.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                            <td><a href="docs/obs_p2_sem16.docx" target="_blank"><i class="fa fa-file-word"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Universidad Autónoma del Perú - Todos los derechos reservados
+        </footer>
+    </div>
+</body>
+
+</html>
